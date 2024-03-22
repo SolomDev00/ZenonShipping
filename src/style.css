@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-family: "Tajawal", sans-serif;
+}
+
+:root {
+  --primary-100: #004270;
+}
+
+/* --- Global Styles --- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+body::-moz-focus-inner {
+  color: #110726;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background-color: #110726;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 0;
+  background-color: transparent;
+}
+
+.root-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 95% !important;
+  }
+}
+
+/* --- Marks --- */
+.mark {
+  position: relative;
+  padding: 0 0 12.5px;
+}
+
+.mark::after {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 12px;
+  bottom: 0;
+  left: 50%;
+  z-index: 7;
+  -webkit-transform: translate(-45px);
+  -ms-transform: translate(-45px);
+  transform: translate(-45px);
+  background-color: var(--primary-100);
+  -webkit-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-image: url(assets/headline-curve.svg);
+  mask-image: url(assets/headline-curve.svg);
+}
+
+.mark-z {
+  position: relative;
+  padding: 0 0 8px;
+}
+
+.mark-z::after {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 12px;
+  bottom: -5px;
+  left: 50%;
+  z-index: 7;
+  -webkit-transform: translate(-45px);
+  -ms-transform: translate(-45px);
+  transform: translate(-45px);
+  background-color: var(--primary-100);
+  -webkit-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-image: url(assets/headline-underline-zigzag.svg);
+  mask-image: url(assets/headline-underline-zigzag.svg);
+}
+
+/* --- TrackingSection --- */
+.track-background {
+  padding: 60px 0px 70px;
+  position: relative;
+}
+
+.track-background::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: -1;
+  position: absolute;
+  background: url(assets/track.jpg) center center / cover no-repeat;
+  transform: scaleX(-1);
+}
+
+/* --- FeaturesSection --- */
+.features-background {
+  padding: 100px 0 70px;
+  position: relative;
+  z-index: -1;
+}
+
+.features-background::before {
+  background: url(assets/features.png) no-repeat 50% / cover;
+  content: "";
+  height: 64%;
+  left: 14%;
+  position: absolute;
+  top: 27%;
+  width: 71%;
+  z-index: -1;
+}
+/* --- StatisticSection --- */
+.statistic-background {
+  background: url(assets/statistics.jpg) no-repeat top / cover;
+  background-attachment: fixed;
+  padding: 135px 0;
+  position: relative;
+}
+
+.statistic-background::before {
+  background: #2e2e2ecc;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

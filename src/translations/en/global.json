@@ -1,0 +1,45 @@
+{
+  "navbar": {
+    "logo": "زينون سوفت وير",
+    "track": "TRACK SHIPMENT",
+    "about": "ABOUT",
+    "services": "SERVICES",
+    "features": "FEATURES",
+    "statistics": "STATISTICS",
+    "login": "LOGIN"
+  },
+
+  "landing": {
+    "title": "Your Gateway to ",
+    "span": "Travel",
+    "title2": " the World.",
+    "description": "#With_Minas_Your_Travels_Don't_Forget"
+  },
+  "ticket": {
+    "flight": "Flight",
+    "hotal": "Hotals",
+    "oneway": "One-way",
+    "trip": "Round-trip",
+    "city": "Multi-city",
+    "add": "Add flight",
+    "from": "from",
+    "to": "to",
+    "depart": "Depart",
+    "return": "Return",
+    "direct": "Direct flight only",
+    "adult": "Adult",
+    "economy": "Economy",
+    "payment": "Payment Types",
+    "stay": "Where do you want to stay?",
+    "destination": "Destination",
+    "checkin": "Check In",
+    "checkout": "Check Out",
+    "guest": "Guests & Rooms",
+    "location": "Cairo, Egypt",
+    "checkindate": "Sat, 16 Mar 2024",
+    "checkoutdate": "Sun, 17 Mar 2024",
+    "rooms": "2 Adult in 1 Room",
+    "free": "Free cancellation",
+    "search": "Search"
+  }
+}
