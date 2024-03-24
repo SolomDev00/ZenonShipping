@@ -127,6 +127,21 @@ body::-webkit-scrollbar-thumb {
   transform: scaleX(-1);
 }
 
+.track-en-background {
+  padding: 60px 0px 70px;
+  position: relative;
+}
+
+.track-en-background::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: -1;
+  position: absolute;
+  background: url(assets/track.jpg) center center / cover no-repeat;
+}
+
 /* --- FeaturesSection --- */
 .features-background {
   padding: 100px 0 70px;

@@ -6,40 +6,59 @@
     "services": "SERVICES",
     "features": "FEATURES",
     "statistics": "STATISTICS",
+    "lang": "Language",
+    "toggle": "Dark / Light Mode",
     "login": "LOGIN"
   },
 
   "landing": {
-    "title": "Your Gateway to ",
-    "span": "Travel",
-    "title2": " the World.",
-    "description": "#With_Minas_Your_Travels_Don't_Forget"
+    "title": "... We are the fastest",
+    "semiDescription": "We make destinations shorter",
+    "description": "Deliver your products to any place with a one-stop, full-service next-day delivery and logistics solution",
+    "btn": "!View more"
   },
-  "ticket": {
-    "flight": "Flight",
-    "hotal": "Hotals",
-    "oneway": "One-way",
-    "trip": "Round-trip",
-    "city": "Multi-city",
-    "add": "Add flight",
-    "from": "from",
-    "to": "to",
-    "depart": "Depart",
-    "return": "Return",
-    "direct": "Direct flight only",
-    "adult": "Adult",
-    "economy": "Economy",
-    "payment": "Payment Types",
-    "stay": "Where do you want to stay?",
-    "destination": "Destination",
-    "checkin": "Check In",
-    "checkout": "Check Out",
-    "guest": "Guests & Rooms",
-    "location": "Cairo, Egypt",
-    "checkindate": "Sat, 16 Mar 2024",
-    "checkoutdate": "Sun, 17 Mar 2024",
-    "rooms": "2 Adult in 1 Room",
-    "free": "Free cancellation",
-    "search": "Search"
+  "track": {
+    "enter": "Enter your shipment code to track",
+    "btn": "TRACK SHIPMENT"
+  },
+  "about": {
+    "title": "?Who We Are",
+    "description": "Telegraph For Freight & Courier Services L.L.C. Telegraph contributes to community development by providing a range of commercial services that support the development and development plan. Telegraph has the honor to offer its customers various services in the field of shipping, unloading, shipping and cash collection services (C.O.D) as soon as possible and offer our services a competitive prices. Telegraph offers all its services through a group of highly qualified and challenging management",
+    "info_1": "Telegraph is a company that invites technology to the logistics industry to create a seamless delivery experience",
+    "info_2": "Telegraph is a fast growing courier and logistics company based in Alexandria, Egypt",
+    "info_3": "Telegraph was founded in 2019 with a vision to introduce market leading express delivery and logistics services to the region"
+  },
+  "services": {
+    "title": "Our Services",
+    "t1": "Pick up",
+    "d1": "Create your shipment before 12:00 pm time and we gladly arrive to your doorsteps to collect the pickup in the same day",
+    "t2": "Next day delivery",
+    "d2": "Our promise is to deliver the next day we receive the pickups, depending on the drop-off city location",
+    "t3": "Exchange shipments",
+    "d3": "Exchange a shipment for another through our smart system",
+    "t4": "Customer returns",
+    "d4": "Telegraph returns customers' shipments as quickly and safely as possible",
+    "t5": "Stock",
+    "d5": "We collect your inventory from you and store it safely in our fulfillment centers",
+    "t6": "Cash collection",
+    "d6": "We offer cash collection services in more than one way, including bank and electronic transfers, as well as receipt from company branches or through a cash representative"
+  },
+  "features": {
+    "title": "Our Awesome Features",
+    "t1": "Manage COD",
+    "d1": "Telegraph also offers cash collection and cash on delivery (COD) services as an option for all its customers without any additional fees",
+    "t2": "E-commerce Fulfillment",
+    "d2": "We handle every aspect and requirement of your e-commerce, from keeping your products securely stored in our strategically located facilities and making sure they are properly packaged and shipped, to securely managing the cash collections and returns process",
+    "t3": "Track orders",
+    "d3": "Monitor & track your shipments online from placing the order till delivery through the company's website or through the company's application",
+    "t4": "Door to door",
+    "d4": "We receive your shipment from your home and deliver to the customer's home"
+  },
+  "statistics": {
+    "title": "",
+    "description": "",
+    "places": "",
+    "shipment": "",
+    "customers": ""
   }
 }

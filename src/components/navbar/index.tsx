@@ -11,9 +11,9 @@ import {
 } from "@heroicons/react/20/solid";
 import { useTranslation } from "react-i18next";
 import UK from "../../assets/uk.png";
-import UAE from "../../assets/uae.png";
+import EG from "../../assets/eg.png";
 import { Link } from "react-router-dom";
-import LogoImg from "../../assets/logo.png";
+import LogoImg from "../../assets/logo_sm.png";
 import { Switch } from "@headlessui/react";
 
 interface IProps {
@@ -99,7 +99,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
       }}
     >
       <div
-        className={`menu__wrapper duration-200 ${
+        className={`menu__wrapper container max-sm:max-w-[70rem] duration-200 ${
           scrolling ? "bg-[#fff]" : "text-transparent"
         }`}
         style={{
@@ -108,8 +108,8 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
         }}
       >
         <div className="menu__bar">
-          <Link
-            to="/"
+          <a
+            href="/#"
             title={t("navbar.logo")}
             aria-label="home"
             className="logo"
@@ -121,53 +121,65 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               src={LogoImg}
               alt="logo"
             />
-          </Link>
+          </a>
           <nav>
             <ul className="navigation mt-4 hide">
               <li>
-                <Link
-                  className="text-[#000] dark:text-white duration-300"
-                  to="/"
+                <a
+                  className={`text-[#000] dark:text-white duration-300 ${
+                    window.scrollY > 50
+                      ? "dark:text-black text-black"
+                      : "dark:text-white"
+                  }`}
+                  href="/#track"
                   title={t("navbar.track")}
                 >
                   {t("navbar.track")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-[#000] dark:text-white duration-300"
-                  to="/about-us"
+                <a
+                  className={`text-[#000] dark:text-white duration-300 ${
+                    window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
+                  }`}
+                  href="/#about"
                   title={t("navbar.about")}
                 >
                   {t("navbar.about")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-[#000] dark:text-white duration-300"
-                  to="/flight"
+                <a
+                  className={`text-[#000] dark:text-white duration-300 ${
+                    window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
+                  }`}
+                  href="/#services"
                   title={t("navbar.services")}
                 >
                   {t("navbar.services")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-[#000] dark:text-white duration-300"
-                  to="/services"
+                <a
+                  className={`text-[#000] dark:text-white duration-300 ${
+                    window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
+                  }`}
+                  href="/#features"
                   title={t("navbar.features")}
                 >
                   {t("navbar.features")}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  className="text-[#000] dark:text-white duration-300"
-                  to="/partners"
+                <a
+                  className={`text-[#000] dark:text-white duration-300 ${
+                    window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
+                  }`}
+                  href="/#statistics"
                   title={t("navbar.statistics")}
                 >
                   {t("navbar.statistics")}
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
@@ -190,7 +202,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               {i18n.language === "en" ? (
                 <img className="w-6" src={UK} alt="english" />
               ) : (
-                <img className="w-6" src={UAE} alt="arabic" />
+                <img className="w-6" src={EG} alt="arabic" />
               )}
             </button>
             <Switch
@@ -201,7 +213,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               className={`${darkMode ? "bg-[#252841]" : "bg-[#ff983f]"} ${
                 i18n.language === "en" ? "flex-row" : "flex-row-reverse"
               }
-          relative flex h-[28px] w-[64px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75`}
+           relative flex h-[28px] w-[64px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white/75`}
             >
               <span className="sr-only">Use setting</span>
               <span
@@ -243,21 +255,26 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
           onClick={toggleMenu}
         >
           {showMenu ? (
-            <XMarkIcon className={"fill-white"} />
+            <XMarkIcon className={"fill-black dark:fill-white"} />
           ) : i18n.language === "en" ? (
-            <Bars3BottomRightIcon className={"fill-white"} />
+            <Bars3BottomRightIcon className={"fill-black dark:fill-white"} />
           ) : (
-            <Bars3BottomLeftIcon className={"fill-white"} />
+            <Bars3BottomLeftIcon className={"fill-black dark:fill-white"} />
           )}
         </button>
         {showMenu && (
           <div className="mobile-menu-overlay">
             <div className="mobile-menu">
               <nav>
+                <img className="w-32" src={LogoImg} alt="Logo" />
                 <ul className="text-center space-y-5">
                   <li className="text-black text-xl hover:text-primary duration-150">
-                    <Link to="/" title="Home" onClick={handleNavLinkClick}>
-                      {t("navbar.home")}
+                    <Link
+                      to="/"
+                      title={t("navbar.track")}
+                      onClick={handleNavLinkClick}
+                    >
+                      {t("navbar.track")}
                     </Link>
                   </li>
                   <li className="text-black text-xl hover:text-primary duration-150">
@@ -273,28 +290,19 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
                   <li className="text-black text-xl hover:text-primary duration-150">
                     <Link
                       to="/services"
-                      title="services"
+                      title={t("navbar.features")}
                       onClick={handleNavLinkClick}
                     >
-                      {t("navbar.services")}
+                      {t("navbar.features")}
                     </Link>
                   </li>
                   <li className="text-black text-xl hover:text-primary duration-150">
                     <Link
                       to="/partners"
-                      title="partners"
+                      title={t("navbar.statistics")}
                       onClick={handleNavLinkClick}
                     >
-                      {t("navbar.partners")}
-                    </Link>
-                  </li>
-                  <li className="text-black text-xl hover:text-primary duration-150">
-                    <Link
-                      to="/contact-us"
-                      title="contact"
-                      onClick={handleNavLinkClick}
-                    >
-                      {t("navbar.contact")}
+                      {t("navbar.statistics")}
                     </Link>
                   </li>
                 </ul>

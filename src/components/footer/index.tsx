@@ -9,7 +9,7 @@ import "./Footer.style.css";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#212d5d] pb-3" dir="rtl">
+    <footer className="bg-[#212d5d] pb-3 max-sm:pb-8" dir="rtl">
       <div className="container">
         <div className="flex flex-row justify-center items-center gap-3 cursor-pointer pt-10">
           <LuInstagram className="text-white w-8 h-8" />

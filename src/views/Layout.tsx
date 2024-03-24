@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import { useEffect, useState } from "react";
 import HomeLoading from "../components/loading/home";
 import Footer from "../components/footer";
+import ScrollButton from "../components/TopBtn";
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
@@ -36,6 +37,7 @@ const RootLayout = () => {
           />
           <main className="min-h-screen w-full">
             <Outlet />
+            <ScrollButton />
           </main>
           <Footer />
         </>
