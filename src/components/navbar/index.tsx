@@ -126,7 +126,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
             <ul className="navigation mt-4 hide">
               <li>
                 <a
-                  className={`text-[#000] dark:text-white duration-300 ${
+                  className={`text-[#000] duration-300 ${
                     window.scrollY > 50
                       ? "dark:text-black text-black"
                       : "dark:text-white"
@@ -139,8 +139,10 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               </li>
               <li>
                 <a
-                  className={`text-[#000] dark:text-white duration-300 ${
-                    window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
+                  className={`text-[#000] duration-300 ${
+                    window.scrollY > 50
+                      ? "dark:text-black text-black"
+                      : "dark:text-white"
                   }`}
                   href="/#about"
                   title={t("navbar.about")}
@@ -150,7 +152,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               </li>
               <li>
                 <a
-                  className={`text-[#000] dark:text-white duration-300 ${
+                  className={`text-[#000] duration-300 ${
                     window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
                   }`}
                   href="/#services"
@@ -161,7 +163,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               </li>
               <li>
                 <a
-                  className={`text-[#000] dark:text-white duration-300 ${
+                  className={`text-[#000] duration-300 ${
                     window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
                   }`}
                   href="/#features"
@@ -172,7 +174,7 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
               </li>
               <li>
                 <a
-                  className={`text-[#000] dark:text-white duration-300 ${
+                  className={`text-[#000] duration-300 ${
                     window.scrollY > 50 ? "dark:text-black" : "dark:text-white"
                   }`}
                   href="/#statistics"
@@ -255,17 +257,35 @@ const Navbar = ({ darkMode, setDarkMode, onClick }: IProps) => {
           onClick={toggleMenu}
         >
           {showMenu ? (
-            <XMarkIcon className={"fill-black dark:fill-white"} />
+            <XMarkIcon
+              className={`fill-[#000] duration-300 ${
+                window.scrollY > 50
+                  ? "dark:fill-black fill-black"
+                  : "dark:fill-white"
+              }`}
+            />
           ) : i18n.language === "en" ? (
-            <Bars3BottomRightIcon className={"fill-black dark:fill-white"} />
+            <Bars3BottomRightIcon
+              className={`fill-[#000] duration-300 ${
+                window.scrollY > 50
+                  ? "dark:fill-black fill-black"
+                  : "dark:fill-white"
+              }`}
+            />
           ) : (
-            <Bars3BottomLeftIcon className={"fill-black dark:fill-white"} />
+            <Bars3BottomLeftIcon
+              className={`fill-[#000] duration-300 ${
+                window.scrollY > 50
+                  ? "dark:fill-black fill-black"
+                  : "dark:fill-white"
+              }`}
+            />
           )}
         </button>
         {showMenu && (
           <div className="mobile-menu-overlay">
             <div className="mobile-menu">
-              <nav>
+              <nav className="flex flex-col items-center">
                 <img className="w-32" src={LogoImg} alt="Logo" />
                 <ul className="text-center space-y-5">
                   <li className="text-black text-xl hover:text-primary duration-150">

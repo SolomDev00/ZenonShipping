@@ -19,13 +19,13 @@ const RootLayout = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 3000);
   }, []);
 
   return (
     <div className={`${darkMode && "dark"} root-layout`}>
       {loading ? (
-        <div className="h-screen w-full flex justify-center items-center">
+        <div className="h-screen w-full flex justify-center items-center bg-[#2f3031]">
           <HomeLoading />
         </div>
       ) : (
